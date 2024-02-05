@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="displayCaracter.js" defer></script>
+    <script src="displayCaracter.js" type="module" ></script>
+    <script src="script.js" type="module" ></script>
 </head>
 <body>
     <div class="background">
         <div class="main-top-container">
             <div class="playground">
-                <p>le nom du tama</p>
+                <p class="name">Mon nom est Pivoine</p>
                 <div class="tama-container">
                     <img class="tama-img" src="" alt="" id="tamaImg">
                 </div>
@@ -19,7 +20,8 @@
             <div class="right-side-container">
                 <div class="progress-bar-container">
                     <div class="progress-bar">
-                        <div class="progress"></div>
+                        <div class="progress-bar-title" id="faimBarTitle"></div>
+                        <div class="progress" id="faimBar"></div>
                     </div>
                     <div class="progress-bar">
                         <div class="progress"></div>
