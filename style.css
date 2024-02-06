@@ -84,20 +84,32 @@ justify-content: space-around;
 align-items: center;
 }
 
+.faim-bar-container, .joie-bar-container, .dodo-bar-container, .sortie-bar-container{
+    width: 80%;
+}
+
+.progress-bar-container{
+padding: 10% 0;
+
+}
+
+.faim-bar-title, .joie-bar-title, .dodo-bar-title, .sortie-bar-title{
+    font-size: 2vw;
+    text-align: center;
+}
 
 
 .progress-bar{
 position: relative;
 border: 1px solid grey;
-width: 80%;
 padding: 5% 0 5% 0;
 overflow: hidden;
 }
 
 .progress-bar-title{
     position: absolute;
-    top: -10px;
-    left: 5px;
+    top: 0px;
+    left: 63px;
     font-size: 2vw;
 }
 
