@@ -10,24 +10,30 @@ body,p,h1,h2 {
     list-style: none;
 }
 
+body{
+    background-image: url(img/wp1902719.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .background {
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 252, 243, 1);
-    border: 10px solid yellow;
+    background-color: #f9c1a000;
+    border-radius: 39px;
     width: 80%;
-    margin: auto;
+    margin: 25% auto;
+    box-shadow: 0Px 0px 20px 0px black;
 }
 
 .right-side-container{
-    border: 5px solid black;
     width: 30%;
 }
 
 .main-top-container{
     display: flex;
     flex-direction: row;
-    border: 5px solid red;
     height : 80%;
 }
 
@@ -36,7 +42,6 @@ body,p,h1,h2 {
     flex-direction: column;
     width: 75%;
     height : 100%;
-    border: 5px solid blue;
 }
 
 .name{
@@ -55,7 +60,7 @@ margin: 3%;
 }
 
 .bottom-container{
-    border: 5px solid green;
+
     display: flex;
     justify-content: space-evenly;
 }
@@ -76,7 +81,6 @@ margin: 3%;
 }
 
 .progress-bar-container{
-border:5px solid salmon;
 height: 80%;
 display: flex;
 flex-direction: column;
@@ -101,8 +105,11 @@ padding: 10% 0;
 
 .progress-bar{
 position: relative;
-border: 1px solid grey;
-padding: 5% 0 5% 0;
+background-color: #F9C1A0;
+border: 1px solid rgb(255, 254, 254);
+box-shadow: 2px 2px 4px 0px #eeeeee;;
+border-radius: 10px;
+padding: 7% 0 7% 0;
 overflow: hidden;
 }
 
@@ -119,14 +126,14 @@ top:0;
 left:0;
 height: 100%;
 display: block;
-transition: 2s linear;
+/* transition: 1s linear; */
 }
 
 .arrows-icons-container{
 display: flex;
 height: 15%;
 justify-content: center;
-border: 5px solid darkolivegreen;
+
 }
 
 .arrows-icons-container>img{

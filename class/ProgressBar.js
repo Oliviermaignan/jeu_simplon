@@ -1,13 +1,15 @@
 export class ProgressBar {
     #title;
     #id;
+    #amount
 
-    constructor (title, id){
+    constructor (title, id, amount = 100){
         this.title = title;
         this.id = id;
+        this.amount = amount;
         this.createHTML()
         this.displayTitle();
-        this.changeColor('green');
+        this.changeColor('#B7F6AF');
         this.setProgressBar();
         this.decreasingProgress();
     };
@@ -26,6 +28,14 @@ export class ProgressBar {
 
     set id(id){
         this.#id= id;
+    }
+
+    get amount(){
+        return this.#amount
+    }
+
+    set amount(amount){
+        this.#amount= amount;
     }
 
     createHTML(){
@@ -56,7 +66,6 @@ export class ProgressBar {
     }
 
     changeColor (color){
-        console.log(this.id)
         let progressBarElement = document.querySelector(`#${this.id}`);
         progressBarElement.style.backgroundColor = color;
     }
@@ -67,35 +76,48 @@ export class ProgressBar {
     }
 
     decreasingProgress(){
-        let width = 100;
-        let progressElements = document.querySelectorAll(`#${this.id}`)
+        let progressElements = document.querySelector(`#${this.id}`)
+        this.amount = parseInt(progressElements.style.width)
         let time = setInterval(()=>{
-            if (width === 0){
-                this.displayDead()
+            if (this.amount === 0){
                 clearInterval(time)
+                this.displayDead()
             }
-            if (width > 40){
-                width -= 1
-                progressElements.forEach((element)=>{
-                    element.style.width = width + '%';
-                }) 
+            if (this.amount > 40){
+                this.changeColor('#B7F6AF');
+                this.amount -= 1
+                progressElements.style.width = this.amount + '%';
             }
-            if (width > 0 && width <=40){
-                this.changeColor('red');
-                width -= 1
-                progressElements.forEach((element)=>{
-                    element.style.width = width + '%';
-                })
+            if (this.amount > 0 && this.amount <=40){
+                this.changeColor('#FF3030');
+                this.amount -= 1
+                progressElements.style.width = this.amount + '%';
             }
         },500)
     }
 
     displayDead(){
-        console.log('dead')
+        let tamaImg = document.querySelector('#tamaImg');
+        tamaImg.src = './persoSVG/deadCharacter.svg'
     }
 
-    increasingBar(){
-        
+    addLife(){
+        let progressElements = document.querySelector(`#${this.id}`);
+
+        this.amount = parseInt(progressElements.style.width);
+        if (this.amount>80){
+            this.amount = this.amount + 100-this.amount;
+            progressElements.style.width += this.amount;
+        } else {
+            this.amount += 25
+            progressElements.style.width += this.amount;
+        }
+    }
+
+    sourir(){
+        let tamaImg = document.querySelector('#tamaImg');
+        tamaImg.src = './persoSVG/Sourire1.svg'
+        tamaImg.src = './persoSVG/Sourire2.svg'
     }
 
 }
