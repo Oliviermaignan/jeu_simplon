@@ -24,7 +24,8 @@ body{
     border-radius: 39px;
     width: 80%;
     margin: 25% auto;
-    box-shadow: 0Px 0px 20px 0px black;
+    box-shadow:  0px 0px 7px white;
+    backdrop-filter: blur(3px);
 }
 
 .right-side-container{
