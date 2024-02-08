@@ -93,7 +93,7 @@ export class ProgressBar {
                 this.amount -= 1
                 progressElements.style.width = this.amount + '%';
             }
-        },50)
+        },500)
     }
 
     displayDead(){
@@ -116,8 +116,11 @@ export class ProgressBar {
 
     sourir(){
         let tamaImg = document.querySelector('#tamaImg');
-        tamaImg.src = './persoSVG/Sourire1.svg'
-        tamaImg.src = './persoSVG/Sourire2.svg'
+        tamaImg.classList.replace("live", "happy")
+        setTimeout( ()=>{
+            tamaImg.classList.replace("happy", "live")
+        }  
+        ,700)
     }
 
 }

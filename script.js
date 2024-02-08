@@ -28,3 +28,5 @@ sortieBtn.addEventListener('click', ()=>{
     sortieBar.sourir();
 })
 
+document.addEventListener('')
+
