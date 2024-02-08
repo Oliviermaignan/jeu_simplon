@@ -1,0 +1,36 @@
+@keyframes animation {
+    from {
+        background-image: url(persoSVG/newPerso1.png);
+    } 
+    25% {
+        background-image: url(persoSVG/newPerso2.png);
+    }
+    50%{
+        background-image: url(persoSVG/newPerso3.png);
+    }
+    75% {
+        background-image: url(persoSVG/newPerso4.png);
+    }
+    to {
+        background-image: url(persoSVG/newPerso1.png);
+    }
+}
+
+.tama-img{
+    width: 100%;
+    height: 250px;
+    content: "";
+
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.live{
+    animation: animation infinite 4s;
+}
+
+.dead {
+    background-image: url(persoSVG/newPersoDead.png);
+}
+

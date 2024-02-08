@@ -12,19 +12,18 @@ body,p,h1,h2 {
 
 body{
     background-image: url(img/wp1902719.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
-
 .background {
     display: flex;
     flex-direction: column;
     background-color: #f9c1a000;
     border-radius: 39px;
     width: 80%;
-    margin: 25% auto;
-    box-shadow:  0px 0px 7px white;
+    margin: 5% auto;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px 0px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     backdrop-filter: blur(3px);
 }
 
@@ -56,10 +55,6 @@ justify-content: center;
 margin: 3%;
 }
 
-.tama-img{
-    width:45%;
-}
-
 .bottom-container{
 
     display: flex;
@@ -68,12 +63,17 @@ margin: 3%;
 
 .icons-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 2% 0;
 }
 
 .icons-container>img{
     width: 40%;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 8% 16%;
+    border: 1px solid rgba(255, 254, 254, 0.399);
+    box-shadow: 1px 1px 2px 0px #eeeeee7d
 }
 
 .right-side-container{
@@ -106,9 +106,9 @@ padding: 10% 0;
 
 .progress-bar{
 position: relative;
-background-color: #F9C1A0;
-border: 1px solid rgb(255, 254, 254);
-box-shadow: 2px 2px 4px 0px #eeeeee;;
+background-color: #e6e1f88a;
+border: 1px solid rgba(255, 254, 254, 0.467);
+box-shadow: 1px 1px 2px 0px #eeeeee;
 border-radius: 10px;
 padding: 7% 0 7% 0;
 overflow: hidden;

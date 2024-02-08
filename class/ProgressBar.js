@@ -9,7 +9,7 @@ export class ProgressBar {
         this.amount = amount;
         this.createHTML()
         this.displayTitle();
-        this.changeColor('#B7F6AF');
+        this.changeColor('#b1e46b');
         this.setProgressBar();
         this.decreasingProgress();
     };
@@ -84,7 +84,7 @@ export class ProgressBar {
                 this.displayDead()
             }
             if (this.amount > 40){
-                this.changeColor('#B7F6AF');
+                this.changeColor('#b1e46b');
                 this.amount -= 1
                 progressElements.style.width = this.amount + '%';
             }
@@ -93,12 +93,12 @@ export class ProgressBar {
                 this.amount -= 1
                 progressElements.style.width = this.amount + '%';
             }
-        },500)
+        },50)
     }
 
     displayDead(){
         let tamaImg = document.querySelector('#tamaImg');
-        tamaImg.src = './persoSVG/deadCharacter.svg'
+        tamaImg.classList.replace("live", "dead")
     }
 
     addLife(){
