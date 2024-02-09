@@ -16,6 +16,15 @@
     }
 }
 
+.outdoor-container{
+    display: none;
+}
+
+.outdoor-title{
+width:50%;
+text-align: center;
+margin: 0 auto;
+}
 
 .tama-outdoor{
     width: 150px;
@@ -24,7 +33,6 @@
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: 80%;
-    /* animation: marche infinite 1s; */
     position: relative;
     top: 146px;
     left: 599px;
@@ -38,6 +46,13 @@
     background-size: 100% 325%;
 }
 
-resizing-outdoor{
+.resizing-outdoor{
     background-size: 100% 130%;
+}
+
+.arrowIcon > img {
+    width: 13%;
+    position: absolute;
+    top: 8px;
+    left: 21px;
 }

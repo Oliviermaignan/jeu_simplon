@@ -99,6 +99,8 @@ export class ProgressBar {
     displayDead(){
         let tamaImg = document.querySelector('#tamaImg');
         tamaImg.classList.replace("live", "dead")
+        let title = document.querySelector('.playground>p')
+        title.textContent= "✟ J'étais Pivoine ✟"
     }
 
     addLife(){

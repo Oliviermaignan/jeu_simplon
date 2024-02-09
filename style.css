@@ -131,7 +131,7 @@ display: block;
 /* transition: 1s linear; */
 }
 
-.arrows-icons-container{
+/* .arrows-icons-container{
 display: flex;
 height: 15%;
 justify-content: center;
@@ -141,4 +141,4 @@ justify-content: center;
 .arrows-icons-container>img{
     width: 26%;
     object-fit: cover;
-}
+} */
