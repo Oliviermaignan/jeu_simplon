@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'superLegendBoy';
-    src: url(/SuperLegendBoy-4w8Y.ttf);
+    src: url(./SuperLegendBoy-4w8Y.ttf);
 }
 body,p,h1,h2 {
     font-family: 'superLegendBoy';
