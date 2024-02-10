@@ -19,12 +19,15 @@ body{
     background-repeat: no-repeat;
 }
 .background {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     background-color: #f9c1a000;
     border-radius: 39px;
     width: 50%;
-    margin: 5% auto;
+    margin: 0% auto;
     box-shadow: rgba(0, 0, 0, 0.17) 0px 0px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     backdrop-filter: blur(3px);
 }
@@ -129,17 +132,44 @@ top:0;
 left:0;
 height: 100%;
 display: block;
-/* transition: 1s linear; */
 }
 
-/* .arrows-icons-container{
-display: flex;
-height: 15%;
-justify-content: center;
+@media only screen and (max-width:768px){
 
+
+p{
+    font-size: 6vw;
+}
+    
+.background{
+    width: 95%;
 }
 
-.arrows-icons-container>img{
-    width: 26%;
-    object-fit: cover;
-} */
+.bottom-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icons-container{
+    padding: 1% 0;
+}
+
+.icons-container>img{
+width: 20%;
+border: 1px solid black;
+border-radius: 25px;
+padding: 2% 4%;
+border: 1px solid rgba(255, 254, 254, 0.399);
+box-shadow: 1px 1px 2px 0px #eeeeee7d
+}
+
+.faim-bar-container, .joie-bar-container, .dodo-bar-container, .sortie-bar-container{
+width: 97%;
+}
+  
+.faim-bar-title, .joie-bar-title, .dodo-bar-title, .sortie-bar-title{
+font-size: 5vw;
+text-align: center;
+}
+
+}
