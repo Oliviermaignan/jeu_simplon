@@ -1,5 +1,9 @@
 # jeu_simplon
-mon jeu en JS
+Mon jeu en full Javascript
 
+Dessin made by me
 
-Mieux en 920px de width
+Une version Break Point à 1440 px
+Version mobile / tablette Break Point à 768px
+
+Have fun taking care of Pivoine 

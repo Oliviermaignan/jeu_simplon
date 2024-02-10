@@ -21,9 +21,10 @@
 }
 
 .outdoor-title{
-width:50%;
-text-align: center;
-margin: 0 auto;
+    width: 82%;
+    text-align: center;
+    margin: 40% auto -51% auto;
+    font-size: 6vw;
 }
 
 .tama-outdoor{
@@ -34,8 +35,8 @@ margin: 0 auto;
     background-position-x: center;
     background-size: 80%;
     position: relative;
-    top: 146px;
-    left: 599px;
+    top: 440px;
+    left: 700px;
 }
 
 .outdoor{
@@ -43,7 +44,7 @@ margin: 0 auto;
 }
 
 .outdoor-body{
-    background-size: 100% 325%;
+    background-size: 100% 100%;
 }
 
 .resizing-outdoor{
@@ -51,8 +52,23 @@ margin: 0 auto;
 }
 
 .arrowIcon > img {
-    width: 13%;
+    width: 8%;
     position: absolute;
-    top: 8px;
-    left: 21px;
+    top: 20px;
+    left: 40px;
+}
+
+@media only screen and (max-width:768px){
+.tama-outdoor{
+    top: 507px;
+    left: 200px;
+}  
+
+.arrowIcon > img {
+    width: 20%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
 }
