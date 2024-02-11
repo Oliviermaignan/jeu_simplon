@@ -2,7 +2,7 @@
 # jeu_simplon
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
-![Pivoine](./moodboard/Plugin%20icon%20-%201.png)
+![Pivoine](./img/Plugin%20icon%20-%201.png)
 
 ## Instructions
 
@@ -13,7 +13,7 @@
 
 
 ## Comment jouer ?
-** se lien te permet d'accéder au jeu **
+**se lien te permet d'accéder au jeu**
 ==> [Jouer ici avec Pivoine](https://oliviermaignan.github.io/jeu_simplon/) <==
 
 Une version Break Point à 1440 px
