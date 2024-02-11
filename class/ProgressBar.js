@@ -103,7 +103,7 @@ export class ProgressBar {
         title.textContent= "✟ J'étais Pivoine ✟"
     }
 
-    addLife(){
+    addLife(addings){
         let progressElements = document.querySelector(`#${this.id}`);
 
         this.amount = parseInt(progressElements.style.width);
@@ -111,7 +111,7 @@ export class ProgressBar {
             this.amount = this.amount + 100-this.amount;
             progressElements.style.width += this.amount;
         } else {
-            this.amount += 25
+            this.amount += addings;
             progressElements.style.width += this.amount;
         }
     }

@@ -23,9 +23,10 @@
 .outdoor-title{
     width: 82%;
     text-align: center;
-    margin: 40% auto -51% auto;
-    font-size: 6vw;
+    margin: 2% auto 0% auto;
+    font-size: 3vw;
 }
+
 
 .tama-outdoor{
     width: 150px;
@@ -69,6 +70,13 @@
     position: absolute;
     top: 20px;
     left: 20px;
+}
+
+.outdoor-title{
+    width: 82%;
+    text-align: center;
+    margin: 40% auto -51% auto;
+    font-size: 6vw;
 }
 
 }
