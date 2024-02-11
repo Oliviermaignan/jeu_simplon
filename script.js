@@ -1,77 +1,76 @@
 import { ProgressBar } from "./class/ProgressBar.js"; 
 
+//instanciation des barres de vies
 let lifeBar = new ProgressBar('faim', 'faimBar');
 let joieBar = new ProgressBar('joie', 'joieBar');
 let dodoBar = new ProgressBar('dodo', 'dodoBar');
 let sortieBar = new ProgressBar('sortie', 'sortieBar');
 
+//ajouts des fonctionnalités liées aux boutons
 let faimBtn = document.querySelector('#faimIcon')
 faimBtn.addEventListener('click', ()=>{
-    lifeBar.addLife();
+    lifeBar.addLife(30);
     lifeBar.sourir();
 })
 let joieBtn = document.querySelector('#joieIcon')
 joieBtn.addEventListener('click', ()=>{
-    joieBar.addLife();
+    joieBar.addLife(30);
     joieBar.sourir();
 })
 let dodoBtn = document.querySelector('#dodoIcon')
 dodoBtn.addEventListener('click', ()=>{
-    dodoBar.addLife();
+    dodoBar.addLife(30);
     dodoBar.sourir();
 })
 
 // lancement du mode sortie
-
 let sortieBtn = document.querySelector('#sortieIcon')
 sortieBtn.addEventListener('click', ()=>{
+        let tamaImg = document.querySelector('#tamaImg');
 
-    let tamaOutDoor = document.querySelector('.outdoor-container');
-    tamaOutDoor.style.display = 'block';
-
-    let background = document.querySelector(".background");
-    background.classList.add('resizing-outdoor');
-
-    let mainTopContainer = document.querySelector('.main-top-container');
-    mainTopContainer.classList.add('outdoor');
-
-    let bottomContainer = document.querySelector('.bottom-container');
-    bottomContainer.classList.add('outdoor');
-
-    let body = document.querySelector('body')
-    body.classList.add('outdoor-body')
-
-    sortieBar.addLife();
-    sortieBar.addLife();
-    sortieBar.addLife();
-    sortieBar.addLife();
-    sortieBar.addLife();
-    dodoBar.addLife();
-    dodoBar.addLife();
-    joieBar.addLife();
-    joieBar.addLife();
-    lifeBar.addLife();
-    lifeBar.addLife();
-
-    animation();
-    affichageRegleOutdoor()
-    setTimeout(()=>{
-        tamaOutDoor.style.display = 'none';
-
-        background.classList.remove('resizing-outdoor');
-
-        mainTopContainer.classList.remove('outdoor');
-
-        bottomContainer.classList.remove('outdoor');
-        body.classList.remove('outdoor-body')
-    },10000)
-
-
+        if(tamaImg.classList.contains('dead')){
+            return 
+        } else {
+            //changement de l'interface grace aux classes
+            let tamaOutDoor = document.querySelector('.outdoor-container');
+            tamaOutDoor.style.display = 'block';
+    
+            let background = document.querySelector(".background");
+            background.classList.add('resizing-outdoor');
+    
+            let mainTopContainer = document.querySelector('.main-top-container');
+            mainTopContainer.classList.add('outdoor');
+    
+            let bottomContainer = document.querySelector('.bottom-container');
+            bottomContainer.classList.add('outdoor');
+    
+            let body = document.querySelector('body')
+            body.classList.add('outdoor-body')
+    
+            //ajouts fonctionnalités lié au clique
+            sortieBar.addLife(50);
+            dodoBar.addLife(20);
+            joieBar.addLife(40);
+            lifeBar.addLife(5);
+    
+            animation();
+            affichageRegleOutdoor()
+            setTimeout(()=>{
+                tamaOutDoor.style.display = 'none';
+    
+                background.classList.remove('resizing-outdoor');
+    
+                mainTopContainer.classList.remove('outdoor');
+    
+                bottomContainer.classList.remove('outdoor');
+                body.classList.remove('outdoor-body')
+            },10000)
+        }
     }
 )
 
 
-// les fonctions pour gérer le modes exterieurs
+// les fonctions pour gérer le mode exterieur
 function animation(){
     keyDown();
     removeAnimation();
