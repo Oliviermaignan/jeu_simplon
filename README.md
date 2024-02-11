@@ -12,7 +12,7 @@
 4. **Activité physique :** Assure-toi que Pivoine reste en bonne santé en la faisans marcher tant que possible. Attention marcher, sa creuse, ne laisse pas Pivoine mourrir de faim.
 ---
 ## Comment jouer ?
-**se lien te permet d'accéder au jeu**
+**Ce lien te permet d'accéder au jeu**
 
 ==> [Jouer ici avec Pivoine](https://oliviermaignan.github.io/jeu_simplon/) <==
 
