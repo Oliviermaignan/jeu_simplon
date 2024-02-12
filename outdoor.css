@@ -35,9 +35,9 @@
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: 80%;
-    position: relative;
-    top: 440px;
-    left: 700px;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
 }
 
 .outdoor{
@@ -60,30 +60,17 @@
 }
 
 @media only screen and (max-width:768px){
-.tama-outdoor{
-    top: 507px;
-    left: 200px;
-}  
+    .arrowIcon > img {
+        width: 20%;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
 
-.arrowIcon > img {
-    width: 20%;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-.outdoor-title{
-    width: 82%;
-    text-align: center;
-    margin: 40% auto -51% auto;
-    font-size: 6vw;
-}
-
-}
-
-@media only screen and (min-width:1650px){
-    .tama-outdoor{
-        top: 900px;
-        left: 800px;
-    }  
+    .outdoor-title{
+        width: 82%;
+        text-align: center;
+        margin: 40% auto -51% auto;
+        font-size: 6vw;
+    }
 }

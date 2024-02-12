@@ -64,7 +64,7 @@ sortieBtn.addEventListener('click', ()=>{
     
                 bottomContainer.classList.remove('outdoor');
                 body.classList.remove('outdoor-body')
-            },10000)
+            },10000000)
         }
     }
 )
@@ -85,11 +85,13 @@ function keyDown(){
         document.addEventListener('keydown', (e)=>{
             pivoine.style.animation = 'marche infinite 1s';
             if(e.key==='ArrowLeft'){
-                pivoine.style.left = (pivoine.computedStyleMap().get('left').value - 2)+'px' ;
+
+                pivoine.style.right = (pivoine.computedStyleMap().get('right').value + 0.15)+'%' ;
+                console.log(pivoine.style.right)
                 pivoine.style.transform= 'scaleX(1)';
             };
             if(e.key==='ArrowRight'){
-                pivoine.style.left = (pivoine.computedStyleMap().get('left').value + 2)+'px' ;
+                pivoine.style.right = (pivoine.computedStyleMap().get('right').value - 0.15)+'%' ;
                 pivoine.style.transform= 'scaleX(-1)';
             };
         })
