@@ -16,6 +16,18 @@
     }
 }
 
+@keyframes nuageMouvement {
+    from{
+        left: -20%;
+    } 50% {
+
+        top:17%;
+    }
+    to{
+        left: 110%;
+    }
+}
+
 .outdoor-container{
     display: none;
 }
@@ -46,6 +58,7 @@
 
 .outdoor-body{
     background-size: 100% 100%;
+    overflow: hidden;
 }
 
 .resizing-outdoor{
@@ -58,6 +71,40 @@
     top: 20px;
     left: 40px;
 }
+
+.nuages-container{
+    display: flex;
+
+}
+
+.nuages-container>img{
+    width: 15%;
+}
+
+.nuage1{
+    position: absolute;
+    top: 20%;
+    left:-20%;
+    animation: nuageMouvement 60s infinite ease-in;
+    animation-delay: 2s;
+}
+
+.nuage2{
+    position: absolute;
+    top: 12%;
+    left: 100%;
+    animation: nuageMouvement 60s infinite linear;
+    animation-direction:reverse;
+}
+
+.nuage3{
+    position: absolute;
+    top: 15%;
+    left: -20%;
+    animation: nuageMouvement 80s infinite ease-out;
+    animation-delay: 10s;
+}
+
 
 @media only screen and (max-width:768px){
     .arrowIcon > img {

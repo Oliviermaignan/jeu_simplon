@@ -3,6 +3,7 @@ export class Nuages {
 
     constructor(nuages= {}){
         this.nuages = nuages
+        this.createHTML()
     }
 
     get nuages (){
@@ -14,12 +15,24 @@ export class Nuages {
     }
 
     createHTML (){
-        console.log(body.classList)
-        if (body.classList.contains('outdoor-body')){
-            this.nuages.forEach(nuage => {
-                let newDiv = document.createElement('div')
-                newDiv.setAttribute('id', 'nuage')
-            });
-        }
+        let outdoorContainer = document.querySelector('.outdoor-container')
+
+        let newDivContainer = document.createElement('div');
+        newDivContainer.setAttribute('class', 'nuages-container');
+
+        for (let nuageKey in this.nuages) {
+
+            let nuageLink = this.nuages[nuageKey];
+
+
+
+            let newImg = document.createElement('img');
+            newImg.setAttribute('class', nuageKey);
+            newImg.setAttribute('src', nuageLink);
+
+            document.body.append(newDivContainer);
+            newDivContainer.append(newImg);
+
+        };
     }
 }

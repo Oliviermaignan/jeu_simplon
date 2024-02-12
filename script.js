@@ -9,9 +9,12 @@ let sortieBar = new ProgressBar('sortie', 'sortieBar');
 
 //instanciation de la class nuage
 let nuageObject = {
-    nuages1 : 
+    nuage1 : './img/nuage01.png',
+    nuage2 : './img/nuage02.png',
+    nuage3 : './img/nuage03.png',
 }
-let nuages = new Nuages ()
+//appel direct pour la création du HTML
+let nuages = new Nuages(nuageObject);
 
 //ajouts des fonctionnalités liées aux boutons
 let faimBtn = document.querySelector('#faimIcon')
@@ -70,8 +73,8 @@ sortieBtn.addEventListener('click', ()=>{
                 mainTopContainer.classList.remove('outdoor');
     
                 bottomContainer.classList.remove('outdoor');
-                body.classList.remove('outdoor-body')
-            },10000000)
+                body.classList.remove('outdoor-body');
+            },10000)
         }
     }
 )
@@ -86,9 +89,7 @@ function animation(){
 function keyDown(){
     let pivoine = document.querySelector(".tama-outdoor")
     let body = document.querySelector('body');
-    console.log(body.classList.contains('outdoor-body'))
     if (body.classList.contains('outdoor-body')){
-        console.log('aaa')
         document.addEventListener('keydown', (e)=>{
             pivoine.style.animation = 'marche infinite 1s';
             if(e.key==='ArrowLeft'){
