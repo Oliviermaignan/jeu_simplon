@@ -1,10 +1,17 @@
 import { ProgressBar } from "./class/ProgressBar.js"; 
+import { Nuages } from "./class/Nuages.js";
 
 //instanciation des barres de vies
 let lifeBar = new ProgressBar('faim', 'faimBar');
 let joieBar = new ProgressBar('joie', 'joieBar');
 let dodoBar = new ProgressBar('dodo', 'dodoBar');
 let sortieBar = new ProgressBar('sortie', 'sortieBar');
+
+//instanciation de la class nuage
+let nuageObject = {
+    nuages1 : 
+}
+let nuages = new Nuages ()
 
 //ajouts des fonctionnalités liées aux boutons
 let faimBtn = document.querySelector('#faimIcon')
