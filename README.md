@@ -24,6 +24,12 @@
 L'affichage des règles à l'écran est une feature en cours de développement. Elle sera developpée dans un futur proche.
 
 ---
+## Orga
+
+Vous trouverez dans le dossier orgaPerso tous les outils qui m'ont servi à la realisation de ce projet (trello / notion).
+Vous trouverez également un screen de mes maquettes et moodboard réalisés sur Figma.
+
+---
 ## Crédits
 
 Ce jeu a été développé avec amour par Olivier Maignan.

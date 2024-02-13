@@ -33,7 +33,7 @@ dodoBtn.addEventListener('click', ()=>{
     dodoBar.sourir();
 })
 
-// lancement du mode sortie
+// lancement du mode sortie au clique 
 let sortieBtn = document.querySelector('#sortieIcon')
 sortieBtn.addEventListener('click', ()=>{
         let tamaImg = document.querySelector('#tamaImg');
@@ -53,6 +53,9 @@ sortieBtn.addEventListener('click', ()=>{
     
             let bottomContainer = document.querySelector('.bottom-container');
             bottomContainer.classList.add('outdoor');
+
+            let rulesIcons = document.querySelector('.rulesIcons');
+            rulesIcons.style.display = 'none'
     
             let body = document.querySelector('body')
             body.classList.add('outdoor-body')
@@ -67,6 +70,7 @@ sortieBtn.addEventListener('click', ()=>{
             affichageRegleOutdoor()
             setTimeout(()=>{
                 tamaOutDoor.style.display = 'none';
+                rulesIcons.style.display = 'block'
     
                 background.classList.remove('resizing-outdoor');
     
