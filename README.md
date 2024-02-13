@@ -19,6 +19,11 @@
 *La version desktop est optimisé pour les écrans 1440px*
 
 ---
+## Feature en cours de Dev'
+
+L'affichage des règles à l'écran est une feature en cours de développement. Elle sera developpée dans un futur proche.
+
+---
 ## Crédits
 
 Ce jeu a été développé avec amour par Olivier Maignan.

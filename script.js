@@ -87,23 +87,24 @@ function animation(){
 }
 
 function keyDown(){
-    let pivoine = document.querySelector(".tama-outdoor")
+    let pivoine = document.querySelector(".tama-outdoor");
     let body = document.querySelector('body');
     if (body.classList.contains('outdoor-body')){
         document.addEventListener('keydown', (e)=>{
-            pivoine.style.animation = 'marche infinite 1s';
-            if(e.key==='ArrowLeft'){
+            let rightValue = parseFloat(pivoine.style.right || 10);
 
-                pivoine.style.right = (pivoine.computedStyleMap().get('right').value + 0.15)+'%' ;
-                console.log(pivoine.style.right)
+            if(e.key==='ArrowLeft'){
+                pivoine.style.animation = 'marche infinite 1s';
+                pivoine.style.right = (rightValue + 0.2)+'%' ;
                 pivoine.style.transform= 'scaleX(1)';
             };
             if(e.key==='ArrowRight'){
-                pivoine.style.right = (pivoine.computedStyleMap().get('right').value - 0.15)+'%' ;
+                pivoine.style.animation = 'marche infinite 1s';
+                pivoine.style.right = (rightValue - 0.2)+'%' ;
                 pivoine.style.transform= 'scaleX(-1)';
             };
-        })
-    }
+        });
+    };
 }
 
 function removeAnimation(){
@@ -120,4 +121,3 @@ function affichageRegleOutdoor(){
     let title = document.querySelector('.outdoor-title')
     title.textContent= chaineDeCharacter
 }
-

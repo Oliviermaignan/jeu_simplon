@@ -18,6 +18,16 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+
+.rulesIcons {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    width: 7%;
+}
+
 .background {
     z-index: 3;
     position: relative;
